@@ -27,7 +27,7 @@ else {
 let hora = 22
 if(hora > 6 && hora < 12) {
     console.log('Bom dia !')
-}
+} 
 else if (hora > 12 && hora < 18){
     console.log('Boa tarde !')
 }
@@ -79,3 +79,25 @@ while (k >= 1) {
 }
 
 //3. Do.. While
+let m = 0;
+do{
+    console.log('Digitando..', m);
+    m++;
+} while(m < 10)
+
+//4. For.. In
+const identificacao = {
+    nome: 'dagberto',
+    idade: 38
+};
+
+for(let chave in identificacao){
+    console.log(chave, identificacao[chave]);
+}
+
+//5. For.. Of
+const cores = ['azul', 'rosa','amarela','branco','verde'];
+
+for(let cor of cores){
+    console.log(cor);
+}
